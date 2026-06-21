@@ -135,7 +135,7 @@ This structure reduces dependency on third-party image hosting services and impr
 
 ### Homepage
 
-![Homepage](assets/screenshots/Home Page.png)
+![Homepage](assets/screenshots/HomePage.png)
 
 ### Courses Page
 
