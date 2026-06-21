@@ -135,19 +135,19 @@ This structure reduces dependency on third-party image hosting services and impr
 
 ### Homepage
 
-![Homepage](assets/screenshots/HomePage.png)
+![Homepage](assets/screenshots/Home%20Page.png)
 
 ### Courses Page
 
-![Courses Page](assets/screenshots/courses-page.png)
+![Courses Page](assets/screenshots/Course%20Page.png)
 
 ### Gallery Page
 
-![Gallery Page](assets/screenshots/gallery-page.png)
+![Gallery Page](assets/screenshots/Gallery%20Page.png)
 
 ### Contact Page
 
-![Contact Page](assets/screenshots/contact-page.png)
+![Contact Page](assets/screenshots/Contact%20Page.png)
 
 ---
 
