@@ -139,7 +139,7 @@ This structure reduces dependency on third-party image hosting services and impr
 
 ### Courses Page
 
-![Courses Page](assets/screenshots/Course%20Page.png)
+![Courses Page](assets/screenshots/Course%20page.png)
 
 ### Gallery Page
 
