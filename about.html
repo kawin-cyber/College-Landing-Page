@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Tokyo Institute of Global Excellence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <canvas id="sakura-canvas"></canvas>
+
+    <div class="page-loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo"><i class="fas fa-torii-gate"></i> TIGE</div>
+            <div class="loader-bar-track"><div class="loader-bar"></div></div>
+            <div class="loader-text">Initializing Excellence...</div>
+        </div>
+    </div>
+
+    
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-torii-gate" style="color: var(--accent-primary);"></i></span> TIGE
+            </a>
+            <button class="hamburger" aria-label="Toggle Navigation"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" style="color: var(--accent-primary);">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reviews-gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section-padding" style="padding-top: 150px; min-height: 70vh; position: relative; z-index: 2;">
+        <div class="container">
+            <h2 class="section-title">About TIGE</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center; background: rgba(255,255,255,0.9); padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.05);">
+                <i class="fas fa-torii-gate" style="font-size: 4rem; color: var(--accent-primary); margin-bottom: 20px;"></i>
+                <h3 style="font-size: 2rem; margin-bottom: 20px;">A Legacy of Excellence Since 1982</h3>
+                <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 20px;">
+                    Located in the heart of Neo-Tokyo, the Tokyo Institute of Global Excellence stands at the intersection of rich cultural heritage and cutting-edge technological innovation. 
+                </p>
+                <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 30px;">
+                    Our mission is to empower the next generation of leaders, engineers, and artists to shape a sustainable and technologically advanced future. With world-class faculty, state-of-the-art research facilities, and a diverse global community, TIGE is truly the world's premier destination for higher education.
+                </p>
+                <a href="admissions.html" class="cta-primary">Join Our Community</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2><i class="fas fa-torii-gate" style="color: var(--accent-primary);"></i> TIGE</h2>
+                <p>Shape the Future in Neo-Tokyo. World-class education blending tradition with cutting-edge technology.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Academics</h3>
+                <ul>
+                    <li><a href="courses.html">Undergraduate Programs</a></li>
+                    <li><a href="courses.html">Postgraduate Programs</a></li>
+                    <li><a href="facilities.html">Research Labs</a></li>
+                    <li><a href="events.html">Academic Calendar</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Admissions</h3>
+                <ul>
+                    <li><a href="admissions.html">How to Apply</a></li>
+                    <li><a href="admissions.html">Fee Structure</a></li>
+                    <li><a href="admissions.html">Scholarships</a></li>
+                    <li><a href="contact.html">Campus Tours</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="facilities.html">Campus Facilities</a></li>
+                    <li><a href="reviews-gallery.html">Student Life</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tokyo Institute of Global Excellence. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

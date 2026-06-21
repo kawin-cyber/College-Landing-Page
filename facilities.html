@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities | Tokyo Institute of Global Excellence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <canvas id="sakura-canvas"></canvas>
+    <div class="page-loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo"><i class="fas fa-torii-gate"></i> TIGE</div>
+            <div class="loader-bar-track"><div class="loader-bar"></div></div>
+            <div class="loader-text">Initializing Excellence...</div>
+        </div>
+    </div>
+    
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-torii-gate" style="color: var(--accent-primary);"></i></span> TIGE
+            </a>
+            <button class="hamburger" aria-label="Toggle Navigation"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="facilities.html" style="color: var(--accent-primary);">Facilities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reviews-gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Facilities Section -->
+    <section class="facilities section-padding" id="facilities" style="padding-top: 150px; min-height: 70vh;">
+        <div class="container">
+            <h2 class="section-title">Campus Facilities</h2>
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Central Library</h3>
+                    <p>Over 1 million resources in our fully digital and physical library complex.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fas fa-microscope"></i></div>
+                    <h3>Advanced Labs</h3>
+                    <p>State-of-the-art research laboratories equipped with the latest technology.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fas fa-running"></i></div>
+                    <h3>Sports Complex</h3>
+                    <p>Indoor and outdoor sporting facilities including an Olympic-size pool.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fas fa-building"></i></div>
+                    <h3>Student Hostels</h3>
+                    <p>Comfortable, secure, and modern accommodation for all students.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fas fa-coffee"></i></div>
+                    <h3>Cafeteria</h3>
+                    <p>Multiple dining options offering healthy, diverse, and hygienic meals.</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon"><i class="fas fa-wifi"></i></div>
+                    <h3>Campus Wi-Fi</h3>
+                    <p>High-speed, uninterrupted internet access across the entire campus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2><i class="fas fa-torii-gate" style="color: var(--accent-primary);"></i> TIGE</h2>
+                <p>Shape the Future in Neo-Tokyo. World-class education blending tradition with cutting-edge technology.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Academics</h3>
+                <ul>
+                    <li><a href="courses.html">Undergraduate Programs</a></li>
+                    <li><a href="courses.html">Postgraduate Programs</a></li>
+                    <li><a href="facilities.html">Research Labs</a></li>
+                    <li><a href="events.html">Academic Calendar</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Admissions</h3>
+                <ul>
+                    <li><a href="admissions.html">How to Apply</a></li>
+                    <li><a href="admissions.html">Fee Structure</a></li>
+                    <li><a href="admissions.html">Scholarships</a></li>
+                    <li><a href="contact.html">Campus Tours</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="facilities.html">Campus Facilities</a></li>
+                    <li><a href="reviews-gallery.html">Student Life</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tokyo Institute of Global Excellence. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

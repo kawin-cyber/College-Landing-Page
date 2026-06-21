@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Tokyo Institute of Global Excellence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <canvas id="sakura-canvas"></canvas>
+    <div class="page-loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo"><i class="fas fa-torii-gate"></i> TIGE</div>
+            <div class="loader-bar-track"><div class="loader-bar"></div></div>
+            <div class="loader-text">Initializing Excellence...</div>
+        </div>
+    </div>
+    
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-torii-gate" style="color: var(--accent-primary);"></i></span> TIGE
+            </a>
+            <button class="hamburger" aria-label="Toggle Navigation"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="events.html" style="color: var(--accent-primary);">Events</a></li>
+                <li><a href="reviews-gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Events Section -->
+    <section class="events section-padding" id="events" style="padding-top: 150px; min-height: 70vh;">
+        <div class="container">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="events-grid">
+                <!-- Event 1 -->
+                <div class="event-card premium-event">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">SEP</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-badge technology">Technology</span>
+                        <h3>Global Tech Symposium 2026</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 09:00 AM - 05:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Innovation Center, Main Campus</span>
+                        </div>
+                        <p>Join industry leaders discussing the future of AI and sustainable tech in Tokyo. A premier gathering for innovators and technologists.</p>
+                        <div class="event-footer">
+                            <div class="event-speaker">
+                                <i class="fas fa-user-circle"></i>
+                                <span><strong>Dr. Hiroshi Sato</strong> (Keynote)</span>
+                            </div>
+                            <button class="btn btn-primary register-btn">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 2 -->
+                <div class="event-card premium-event">
+                    <div class="event-date">
+                        <span class="day">28</span>
+                        <span class="month">OCT</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-badge culture">Culture</span>
+                        <h3>Cultural Fusion Festival</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 10:00 AM - 08:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Sakura Courtyard</span>
+                        </div>
+                        <p>A grand celebration of arts, music, and international culture. Experience traditional Japanese arts blending with global performances.</p>
+                        <div class="event-footer">
+                            <div class="event-speaker">
+                                <i class="fas fa-users"></i>
+                                <span>Organized by <strong>Student Union</strong></span>
+                            </div>
+                            <button class="btn btn-primary register-btn">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Event 3 -->
+                <div class="event-card premium-event">
+                    <div class="event-date">
+                        <span class="day">05</span>
+                        <span class="month">NOV</span>
+                    </div>
+                    <div class="event-details">
+                        <span class="event-badge career">Career</span>
+                        <h3>Annual Recruitment Drive</h3>
+                        <div class="event-meta">
+                            <span><i class="far fa-clock"></i> 08:30 AM - 06:00 PM</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Global Excellence Hall</span>
+                        </div>
+                        <p>Over 50 multinational companies visiting for the annual placement drive. Secure your future in Neo-Tokyo's booming industries.</p>
+                        <div class="event-footer">
+                            <div class="event-speaker">
+                                <i class="fas fa-briefcase"></i>
+                                <span><strong>Career Placement Cell</strong></span>
+                            </div>
+                            <button class="btn btn-primary register-btn">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2><i class="fas fa-torii-gate" style="color: var(--accent-primary);"></i> TIGE</h2>
+                <p>Shape the Future in Neo-Tokyo. World-class education blending tradition with cutting-edge technology.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Academics</h3>
+                <ul>
+                    <li><a href="courses.html">Undergraduate Programs</a></li>
+                    <li><a href="courses.html">Postgraduate Programs</a></li>
+                    <li><a href="facilities.html">Research Labs</a></li>
+                    <li><a href="events.html">Academic Calendar</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Admissions</h3>
+                <ul>
+                    <li><a href="admissions.html">How to Apply</a></li>
+                    <li><a href="admissions.html">Fee Structure</a></li>
+                    <li><a href="admissions.html">Scholarships</a></li>
+                    <li><a href="contact.html">Campus Tours</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="facilities.html">Campus Facilities</a></li>
+                    <li><a href="reviews-gallery.html">Student Life</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tokyo Institute of Global Excellence. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

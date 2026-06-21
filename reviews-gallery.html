@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Tokyo Institute of Global Excellence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <canvas id="sakura-canvas"></canvas>
+    <div class="page-loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo"><i class="fas fa-torii-gate"></i> TIGE</div>
+            <div class="loader-bar-track"><div class="loader-bar"></div></div>
+            <div class="loader-text">Initializing Excellence...</div>
+        </div>
+    </div>
+    
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-torii-gate" style="color: var(--accent-primary);"></i></span> TIGE
+            </a>
+            <button class="hamburger" aria-label="Toggle Navigation"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reviews-gallery.html" style="color: var(--accent-primary);">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Reviews / Testimonials Section -->
+    <section class="reviews section-padding" id="reviews" style="padding-top: 150px;">
+        <div class="container">
+            <h2 class="section-title">Student Voices</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"TIGE gave me the platform to research advanced robotics with world-class faculty. The opportunities in Tokyo are endless, and the campus facilities are unmatched."</p>
+                    <div class="reviewer">
+                        <img src="assets/images/reviews/reviewer1.jpg" alt="Kenji M." class="reviewer-img">
+                        <div class="reviewer-info">
+                            <h4>Kenji M.</h4>
+                            <span>M.Sc Robotics Alumnus</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"The diverse culture and focus on global literature opened my eyes to new perspectives. The campus life is vibrant, making it an incredible place to learn and grow."</p>
+                    <div class="reviewer">
+                        <img src="assets/images/reviews/reviewer2.jpg" alt="Sarah J." class="reviewer-img">
+                        <div class="reviewer-info">
+                            <h4>Sarah J.</h4>
+                            <span>B.A Digital Media Alumna</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"Excellent placement support! I secured a job at a top-tier finance firm in Tokyo even before I graduated. The faculty mentors guide you every step of the way."</p>
+                    <div class="reviewer">
+                        <img src="assets/images/reviews/reviewer3.jpg" alt="Aarav K." class="reviewer-img">
+                        <div class="reviewer-info">
+                            <h4>Aarav K.</h4>
+                            <span>B.Com International Finance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Photo Gallery -->
+    <section class="gallery section-padding" id="gallery" style="min-height: 50vh;">
+        <div class="container">
+            <h2 class="section-title">Life at TIGE</h2>
+            <div class="gallery-grid premium-grid">
+                <div class="gallery-item large-item">
+                    <img src="assets/images/gallery/campus-building.jpg" alt="Main Campus Building" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Campus Life</span>
+                        <h4>Main Administration Building</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery/graduation.jpg" alt="Graduation Ceremony" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Graduation</span>
+                        <h4>Class of 2025</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery/modern-architecture.jpg" alt="Modern Architecture" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Innovation Center</span>
+                        <h4>The Nexus Hub</h4>
+                    </div>
+                </div>
+                <div class="gallery-item tall-item">
+                    <img src="assets/images/gallery/library-interior.jpg" alt="Library Interior" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Library</span>
+                        <h4>Global Resource Center</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery/dorms.jpg" alt="Student Dorms" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Student Activities</span>
+                        <h4>International Residence</h4>
+                    </div>
+                </div>
+                <div class="gallery-item wide-item">
+                    <img src="assets/images/gallery/tech-labs.jpg" alt="Tech Labs" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Research Labs</span>
+                        <h4>Advanced Robotics Lab</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2><i class="fas fa-torii-gate" style="color: var(--accent-primary);"></i> TIGE</h2>
+                <p>Shape the Future in Neo-Tokyo. World-class education blending tradition with cutting-edge technology.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Academics</h3>
+                <ul>
+                    <li><a href="courses.html">Undergraduate Programs</a></li>
+                    <li><a href="courses.html">Postgraduate Programs</a></li>
+                    <li><a href="facilities.html">Research Labs</a></li>
+                    <li><a href="events.html">Academic Calendar</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Admissions</h3>
+                <ul>
+                    <li><a href="admissions.html">How to Apply</a></li>
+                    <li><a href="admissions.html">Fee Structure</a></li>
+                    <li><a href="admissions.html">Scholarships</a></li>
+                    <li><a href="contact.html">Campus Tours</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="facilities.html">Campus Facilities</a></li>
+                    <li><a href="reviews-gallery.html">Student Life</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tokyo Institute of Global Excellence. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

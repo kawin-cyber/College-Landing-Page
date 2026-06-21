@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions | Tokyo Institute of Global Excellence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <canvas id="sakura-canvas"></canvas>
+    <div class="page-loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo"><i class="fas fa-torii-gate"></i> TIGE</div>
+            <div class="loader-bar-track"><div class="loader-bar"></div></div>
+            <div class="loader-text">Initializing Excellence...</div>
+        </div>
+    </div>
+    
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-torii-gate" style="color: var(--accent-primary);"></i></span> TIGE
+            </a>
+            <button class="hamburger" aria-label="Toggle Navigation"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="admissions.html" style="color: var(--accent-primary);">Admissions</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="reviews-gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Admissions / Fee Table -->
+    <section class="admissions section-padding" id="admissions" style="padding-top: 150px; min-height: 70vh;">
+        <div class="container">
+            <h2 class="section-title">Admissions & Fees</h2>
+            <div class="table-container">
+                <table id="fee-table">
+                    <thead>
+                        <tr>
+                            <th data-type="string" data-column="0">Course Name <span class="sort-icon">↕</span></th>
+                            <th data-type="number" data-column="1">Duration (Years) <span class="sort-icon">↕</span></th>
+                            <th data-type="number" data-column="2">Annual Fee ($) <span class="sort-icon">↕</span></th>
+                            <th data-type="number" data-column="3">Seats Available <span class="sort-icon">↕</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>B.Tech Artificial Intelligence</td><td>4</td><td>12000</td><td>60</td></tr>
+                        <tr><td>M.Sc Robotics Engineering</td><td>2</td><td>14500</td><td>30</td></tr>
+                        <tr><td>B.A Digital Media & Design</td><td>3</td><td>9000</td><td>100</td></tr>
+                        <tr><td>M.A Global Literature</td><td>2</td><td>8500</td><td>40</td></tr>
+                        <tr><td>B.Com International Finance</td><td>3</td><td>10000</td><td>120</td></tr>
+                        <tr><td>M.Sc Data Analytics</td><td>2</td><td>13000</td><td>50</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="admissions-action">
+                <button class="cta-primary btn-apply">Start Your Application</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2><i class="fas fa-torii-gate" style="color: var(--accent-primary);"></i> TIGE</h2>
+                <p>Shape the Future in Neo-Tokyo. World-class education blending tradition with cutting-edge technology.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Academics</h3>
+                <ul>
+                    <li><a href="courses.html">Undergraduate Programs</a></li>
+                    <li><a href="courses.html">Postgraduate Programs</a></li>
+                    <li><a href="facilities.html">Research Labs</a></li>
+                    <li><a href="events.html">Academic Calendar</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Admissions</h3>
+                <ul>
+                    <li><a href="admissions.html">How to Apply</a></li>
+                    <li><a href="admissions.html">Fee Structure</a></li>
+                    <li><a href="admissions.html">Scholarships</a></li>
+                    <li><a href="contact.html">Campus Tours</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="facilities.html">Campus Facilities</a></li>
+                    <li><a href="reviews-gallery.html">Student Life</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tokyo Institute of Global Excellence. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Apply Now Modal -->
+    <div id="apply-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Application Form</h2>
+            <form id="apply-form">
+                <div class="form-group">
+                    <label for="app-name">Full Name</label>
+                    <input type="text" id="app-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="app-email">Email Address</label>
+                    <input type="email" id="app-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="app-course">Interested Course</label>
+                    <select id="app-course" required>
+                        <option value="">Select a course</option>
+                        <option value="btech-ai">B.Tech Artificial Intelligence</option>
+                        <option value="msc-robo">M.Sc Robotics Engineering</option>
+                        <option value="ba-dmd">B.A Digital Media & Design</option>
+                        <option value="ma-lit">M.A Global Literature</option>
+                        <option value="bcom-fin">B.Com International Finance</option>
+                        <option value="msc-data">M.Sc Data Analytics</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Submit Application</button>
+                <div id="app-status"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
