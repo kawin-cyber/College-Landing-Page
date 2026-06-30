@@ -2,6 +2,8 @@
 
 A modern, responsive multi-page college website built using pure **HTML5**, **CSS3**, and **Vanilla JavaScript**. The project features a Japanese-inspired visual identity, interactive UI elements, custom animations, and a fully responsive layout.
 
+🔗 **Live site:** [(https://kawin-cyber.github.io)](https://kawin-cyber.github.io/College-Landing-Page/)
+
 ---
 
 ## 🌸 Overview
